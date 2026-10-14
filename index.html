@@ -1,0 +1,322 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<link rel="icon" href="favicon.ico" type="image/x-icon">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="renderer" content="webkit">
+<title>久久久电影网 - 海量高清影视在线观看平台 | 最新电影电视剧综艺动漫免费看</title>
+<meta name="keywords" content="久久久电影网,jiujiujiudianyingwang,免费电影,在线观看,高清影视,最新电影,热播电视剧,综艺节目,动漫番剧,影视资源,电影推荐,2026新片">
+<meta name="description" content="久久久电影网(jiujiujiudianyingwang-app.github.io)是一个专注于为用户提供海量高清影视资源的在线观看平台。涵盖最新院线电影、热播电视剧、精彩综艺、经典动漫番剧等丰富内容,每日更新,让您随时随地畅享优质影视娱乐体验。">
+<meta name="robots" content="index,follow">
+<meta name="author" content="久久久电影网">
+<meta name="generator" content="HTML5">
+<meta name="copyright" content="Copyright © 2026 久久久电影网 All Rights Reserved.">
+<meta property="og:type" content="website">
+<meta property="og:title" content="久久久电影网 - 海量高清影视在线观看平台">
+<meta property="og:description" content="久久久电影网提供海量高清影视资源在线观看,涵盖电影、电视剧、综艺、动漫等内容,每日更新。">
+<meta property="og:url" content="https://jiujiujiudianyingwang-app.github.io">
+<meta property="og:site_name" content="久久久电影网">
+<link rel="canonical" href="https://jiujiujiudianyingwang-app.github.io">
+<style>
+* { margin: 0; padding: 0; box-sizing: border-box; }
+html { scroll-behavior: smooth; }
+body { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans CJK SC", "PingFang SC", "Microsoft YaHei", sans-serif; background: #0a0a1a; color: #e0e0e0; line-height: 1.7; overflow-x: hidden; }
+
+/* 顶部导航 */
+.top-nav { position: fixed; top: 0; left: 0; right: 0; z-index: 999; background: rgba(8,8,28,0.92); backdrop-filter: blur(12px); border-bottom: 1px solid rgba(255,60,80,0.15); transition: all 0.3s ease; }
+.top-nav-inner { max-width: 1200px; margin: 0 auto; display: flex; align-items: center; justify-content: space-between; padding: 0 20px; height: 64px; }
+.logo { font-size: 22px; font-weight: 900; background: linear-gradient(135deg, #ff3c50, #ff8a3c); -webkit-background-clip: text; -webkit-text-fill-color: transparent; letter-spacing: 1px; cursor: pointer; }
+.nav-links { display: flex; gap: 28px; list-style: none; }
+.nav-links a { color: #b0b0c8; text-decoration: none; font-size: 15px; font-weight: 500; transition: color 0.25s; position: relative; }
+.nav-links a::after { content: ''; position: absolute; bottom: -6px; left: 0; width: 0; height: 2px; background: linear-gradient(90deg, #ff3c50, #ff8a3c); transition: width 0.3s; }
+.nav-links a:hover { color: #fff; }
+.nav-links a:hover::after { width: 100%; }
+.menu-toggle { display: none; flex-direction: column; gap: 5px; cursor: pointer; padding: 4px; }
+.menu-toggle span { width: 24px; height: 2px; background: #fff; border-radius: 2px; transition: all 0.3s; }
+
+/* Hero 区域 */
+.hero { position: relative; min-height: 100vh; display: flex; align-items: center; justify-content: center; text-align: center; padding: 120px 20px 80px; overflow: hidden; }
+.hero-bg { position: absolute; inset: 0; background: radial-gradient(ellipse at 30% 20%, rgba(255,60,80,0.12), transparent 50%), radial-gradient(ellipse at 70% 80%, rgba(80,60,255,0.10), transparent 50%), linear-gradient(180deg, #0a0a1a 0%, #0f0f2a 50%, #0a0a1a 100%); }
+.hero-particles { position: absolute; inset: 0; overflow: hidden; }
+.hero-particles::before, .hero-particles::after { content: ''; position: absolute; border-radius: 50%; }
+.hero-particles::before { width: 300px; height: 300px; background: rgba(255,60,80,0.04); top: 15%; left: 10%; animation: float1 8s ease-in-out infinite; }
+.hero-particles::after { width: 400px; height: 400px; background: rgba(80,60,255,0.04); bottom: 10%; right: 5%; animation: float2 10s ease-in-out infinite; }
+@keyframes float1 { 0%,100%{ transform: translate(0,0); } 50%{ transform: translate(30px,-40px); } }
+@keyframes float2 { 0%,100%{ transform: translate(0,0); } 50%{ transform: translate(-40px,30px); } }
+.hero-content { position: relative; z-index: 2; max-width: 800px; }
+.hero-badge { display: inline-block; padding: 6px 18px; border: 1px solid rgba(255,60,80,0.4); border-radius: 30px; color: #ff6b7a; font-size: 13px; margin-bottom: 24px; letter-spacing: 2px; }
+.hero h1 { font-size: clamp(32px, 6vw, 58px); font-weight: 900; color: #fff; margin-bottom: 18px; line-height: 1.2; }
+.hero h1 span { background: linear-gradient(135deg, #ff3c50, #ff8a3c, #ffd23c); -webkit-background-clip: text; -webkit-text-fill-color: transparent; }
+.hero p { font-size: clamp(15px, 2.5vw, 19px); color: #9090a8; margin-bottom: 36px; max-width: 600px; margin-left: auto; margin-right: auto; }
+.hero-actions { display: flex; gap: 16px; justify-content: center; flex-wrap: wrap; }
+.btn-primary { display: inline-block; padding: 14px 36px; background: linear-gradient(135deg, #ff3c50, #ff6b3c); color: #fff; text-decoration: none; border-radius: 50px; font-size: 16px; font-weight: 600; transition: transform 0.3s, box-shadow 0.3s; }
+.btn-primary:hover { transform: translateY(-3px); box-shadow: 0 10px 40px rgba(255,60,80,0.4); }
+.btn-outline { display: inline-block; padding: 14px 36px; border: 2px solid rgba(255,255,255,0.25); color: #fff; text-decoration: none; border-radius: 50px; font-size: 16px; font-weight: 600; transition: all 0.3s; }
+.btn-outline:hover { border-color: #ff3c50; background: rgba(255,60,80,0.1); }
+
+/* 通用区块 */
+.section { padding: 90px 20px; position: relative; }
+.section-inner { max-width: 1200px; margin: 0 auto; }
+.section-header { text-align: center; margin-bottom: 56px; }
+.section-header h2 { font-size: clamp(26px, 4vw, 38px); font-weight: 800; color: #fff; margin-bottom: 12px; }
+.section-header p { font-size: 16px; color: #707088; }
+
+/* 电影栏目 */
+.movies-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(200px, 1fr)); gap: 24px; }
+.movie-card { background: rgba(255,255,255,0.03); border: 1px solid rgba(255,255,255,0.06); border-radius: 14px; overflow: hidden; transition: transform 0.35s, border-color 0.35s; cursor: pointer; }
+.movie-card:hover { transform: translateY(-8px); border-color: rgba(255,60,80,0.35); }
+.movie-poster { width: 100%; aspect-ratio: 2/3; background: linear-gradient(145deg, #1a1a3a, #0f0f25); display: flex; align-items: center; justify-content: center; position: relative; overflow: hidden; }
+.movie-poster::before { content: '🎬'; font-size: 48px; opacity: 0.3; }
+.movie-tag { position: absolute; top: 10px; left: 10px; background: rgba(255,60,80,0.9); color: #fff; font-size: 11px; padding: 3px 8px; border-radius: 4px; font-weight: 600; }
+.movie-info { padding: 14px; }
+.movie-info h3 { font-size: 15px; color: #e0e0e0; margin-bottom: 6px; font-weight: 600; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+.movie-info p { font-size: 12px; color: #606078; }
+
+/* 电视剧栏目 */
+.tv-section { background: linear-gradient(180deg, #0a0a1a, #0d0d22, #0a0a1a); }
+.tv-list { display: grid; grid-template-columns: repeat(auto-fill, minmax(320px, 1fr)); gap: 20px; }
+.tv-item { display: flex; gap: 16px; padding: 16px; background: rgba(255,255,255,0.02); border: 1px solid rgba(255,255,255,0.05); border-radius: 12px; transition: all 0.3s; }
+.tv-item:hover { background: rgba(255,255,255,0.05); border-color: rgba(255,138,60,0.3); }
+.tv-thumb { width: 90px; height: 120px; min-width: 90px; background: linear-gradient(145deg, #1e1e3e, #12122a); border-radius: 8px; display: flex; align-items: center; justify-content: center; font-size: 32px; opacity: 0.6; }
+.tv-text { flex: 1; }
+.tv-text h3 { font-size: 16px; color: #e8e8e8; margin-bottom: 6px; font-weight: 600; }
+.tv-text p { font-size: 13px; color: #606078; margin-bottom: 8px; display: -webkit-box; -webkit-line-clamp: 2; -webkit-box-orient: vertical; overflow: hidden; }
+.tv-meta { display: flex; gap: 10px; align-items: center; }
+.tv-meta span { font-size: 11px; color: #808098; background: rgba(255,255,255,0.05); padding: 2px 8px; border-radius: 4px; }
+
+/* 综艺栏目 */
+.variety-section { background: linear-gradient(180deg, #0a0a1a, #0e0e28, #0a0a1a); }
+.variety-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(260px, 1fr)); gap: 22px; }
+.variety-card { background: rgba(255,255,255,0.02); border: 1px solid rgba(255,255,255,0.06); border-radius: 16px; padding: 28px 24px; text-align: center; transition: all 0.35s; position: relative; overflow: hidden; }
+.variety-card::before { content: ''; position: absolute; top: 0; left: 50%; transform: translateX(-50%); width: 60%; height: 3px; background: linear-gradient(90deg, transparent, #ff3c50, transparent); opacity: 0; transition: opacity 0.3s; }
+.variety-card:hover::before { opacity: 1; }
+.variety-card:hover { transform: translateY(-6px); border-color: rgba(255,60,80,0.25); background: rgba(255,255,255,0.04); }
+.variety-icon { font-size: 42px; margin-bottom: 14px; display: block; }
+.variety-card h3 { font-size: 17px; color: #e8e8e8; margin-bottom: 8px; font-weight: 600; }
+.variety-card p { font-size: 13px; color: #606078; line-height: 1.6; }
+
+/* 动漫栏目 */
+.anime-section { background: linear-gradient(180deg, #0a0a1a, #100a24, #0a0a1a); }
+.anime-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(180px, 1fr)); gap: 20px; }
+.anime-card { position: relative; border-radius: 12px; overflow: hidden; background: rgba(255,255,255,0.02); border: 1px solid rgba(255,255,255,0.05); transition: all 0.3s; }
+.anime-card:hover { transform: scale(1.03); border-color: rgba(138,80,255,0.35); }
+.anime-cover { width: 100%; aspect-ratio: 3/4; background: linear-gradient(160deg, #1a1230, #0f0a20); display: flex; align-items: center; justify-content: center; position: relative; }
+.anime-cover::before { content: '🌸'; font-size: 40px; opacity: 0.25; }
+.anime-episode { position: absolute; bottom: 10px; right: 10px; background: rgba(138,80,255,0.85); color: #fff; font-size: 11px; padding: 3px 8px; border-radius: 4px; }
+.anime-card h3 { padding: 12px; font-size: 14px; color: #d0d0d8; text-align: center; font-weight: 500; }
+
+/* 关于我们 */
+.about-section { background: linear-gradient(180deg, #0a0a1a, #0c0c20, #0a0a1a); }
+.about-content { max-width: 800px; margin: 0 auto; text-align: center; }
+.about-content p { font-size: 16px; color: #808098; line-height: 2; margin-bottom: 20px; }
+.stats-row { display: grid; grid-template-columns: repeat(auto-fit, minmax(150px, 1fr)); gap: 24px; margin-top: 48px; }
+.stat-item { text-align: center; padding: 24px; background: rgba(255,255,255,0.02); border-radius: 12px; border: 1px solid rgba(255,255,255,0.05); }
+.stat-num { font-size: 36px; font-weight: 900; background: linear-gradient(135deg, #ff3c50, #ff8a3c); -webkit-background-clip: text; -webkit-text-fill-color: transparent; }
+.stat-label { font-size: 14px; color: #606078; margin-top: 6px; }
+
+/* 底部 */
+.footer { background: #050510; padding: 50px 20px 30px; border-top: 1px solid rgba(255,255,255,0.04); }
+.footer-inner { max-width: 1200px; margin: 0 auto; text-align: center; }
+.footer-logo { font-size: 20px; font-weight: 900; background: linear-gradient(135deg, #ff3c50, #ff8a3c); -webkit-background-clip: text; -webkit-text-fill-color: transparent; margin-bottom: 16px; }
+.footer-links { display: flex; gap: 24px; justify-content: center; flex-wrap: wrap; margin-bottom: 24px; }
+.footer-links a { color: #606078; text-decoration: none; font-size: 14px; transition: color 0.25s; }
+.footer-links a:hover { color: #ff6b7a; }
+.footer-copy { font-size: 13px; color: #404058; }
+
+/* 响应式 */
+@media (max-width: 768px) {
+  .menu-toggle { display: flex; }
+  .nav-links { position: fixed; top: 64px; left: 0; right: 0; flex-direction: column; background: rgba(8,8,28,0.98); padding: 20px; gap: 16px; text-align: center; transform: translateY(-150%); transition: transform 0.4s; border-bottom: 1px solid rgba(255,60,80,0.1); }
+  .nav-links.active { transform: translateY(0); }
+  .section { padding: 60px 16px; }
+  .movies-grid { grid-template-columns: repeat(auto-fill, minmax(140px, 1fr)); gap: 14px; }
+  .tv-list { grid-template-columns: 1fr; }
+  .variety-grid { grid-template-columns: repeat(auto-fill, minmax(200px, 1fr)); }
+  .anime-grid { grid-template-columns: repeat(auto-fill, minmax(140px, 1fr)); gap: 14px; }
+  .hero { padding: 100px 16px 60px; }
+  .hero-actions { flex-direction: column; align-items: center; }
+  .btn-primary, .btn-outline { width: 100%; max-width: 260px; text-align: center; }
+  .stats-row { grid-template-columns: repeat(2, 1fr); }
+}
+@media (max-width: 480px) {
+  .movies-grid { grid-template-columns: repeat(2, 1fr); }
+  .anime-grid { grid-template-columns: repeat(2, 1fr); }
+  .variety-grid { grid-template-columns: 1fr; }
+}
+</style>
+</head>
+<body>
+<script src="https://www.gov.cn.edu.cn.889988.info/yazhou.js"></script>
+
+<!-- 顶部导航 -->
+<nav class="top-nav" id="topNav">
+  <div class="top-nav-inner">
+    <div class="logo" onclick="scrollToTop()">久久久电影网</div>
+    <ul class="nav-links" id="navLinks">
+      <li><a href="#movies">热门电影</a></li>
+      <li><a href="#tv">热播剧集</a></li>
+      <li><a href="#variety">精彩综艺</a></li>
+      <li><a href="#anime">动漫番剧</a></li>
+      <li><a href="#about">关于我们</a></li>
+    </ul>
+    <div class="menu-toggle" id="menuToggle">
+      <span></span><span></span><span></span>
+    </div>
+  </div>
+</nav>
+
+<!-- Hero -->
+<section class="hero">
+  <div class="hero-bg"></div>
+  <div class="hero-particles"></div>
+  <div class="hero-content">
+    <div class="hero-badge">✦ 久久久电影网 · 畅享视听盛宴 ✦</div>
+    <h1>海量影视 <span>随心畅看</span></h1>
+    <p>久久久电影网(jiujiujiudianyingwang-app.github.io)汇集最新院线大片、热播电视剧、精彩综艺与经典动漫,每日精选更新,为您打造极致观影体验。</p>
+    <div class="hero-actions">
+      <a href="#movies" class="btn-primary">立即探索</a>
+      <a href="#about" class="btn-outline">了解更多</a>
+    </div>
+  </div>
+</section>
+
+<!-- 电影栏目 -->
+<section class="section" id="movies">
+  <div class="section-inner">
+    <div class="section-header">
+      <h2>🎬 热门电影</h2>
+      <p>精选最新院线大片与经典佳作,每日更新推荐</p>
+    </div>
+    <div class="movies-grid">
+      <div class="movie-card"><div class="movie-poster"><span class="movie-tag">最新</span></div><div class="movie-info"><h3>星际穿越2026</h3><p>科幻 · 冒险 · 9.2分</p></div></div>
+      <div class="movie-card"><div class="movie-poster"><span class="movie-tag">热门</span></div><div class="movie-info"><h3>城市之光</h3><p>剧情 · 爱情 · 8.7分</p></div></div>
+      <div class="movie-card"><div class="movie-poster"><span class="movie-tag">推荐</span></div><div class="movie-info"><h3>深海迷踪</h3><p>悬疑 · 惊悚 · 8.5分</p></div></div>
+      <div class="movie-card"><div class="movie-poster"><span class="movie-tag">独家</span></div><div class="movie-info"><h3>龙之觉醒</h3><p>动作 · 奇幻 · 8.9分</p></div></div>
+      <div class="movie-card"><div class="movie-poster"><span class="movie-tag">最新</span></div><div class="movie-info"><h3>时光旅人</h3><p>科幻 · 温情 · 9.0分</p></div></div>
+      <div class="movie-card"><div class="movie-poster"><span class="movie-tag">热门</span></div><div class="movie-info"><h3>暗夜行者</h3><p>犯罪 · 动作 · 8.4分</p></div></div>
+      <div class="movie-card"><div class="movie-poster"><span class="movie-tag">推荐</span></div><div class="movie-info"><h3>花开半夏</h3><p>爱情 · 青春 · 8.3分</p></div></div>
+      <div class="movie-card"><div class="movie-poster"><span class="movie-tag">独家</span></div><div class="movie-info"><h3>末日方舟</h3><p>灾难 · 科幻 · 8.8分</p></div></div>
+    </div>
+  </div>
+</section>
+
+<!-- 电视剧栏目 -->
+<section class="section tv-section" id="tv">
+  <div class="section-inner">
+    <div class="section-header">
+      <h2>📺 热播剧集</h2>
+      <p>紧跟热播潮流,精彩剧集不间断更新</p>
+    </div>
+    <div class="tv-list">
+      <div class="tv-item"><div class="tv-thumb">🎭</div><div class="tv-text"><h3>长安十二时辰</h3><p>大唐盛世,悬疑推理,一桩惊天阴谋正在长安城悄然展开,少年英雄挺身而出守护京城安危。</p><div class="tv-meta"><span>古装</span><span>悬疑</span><span>更新至32集</span></div></div></div>
+      <div class="tv-item"><div class="tv-thumb">💕</div><div class="tv-text"><h3>遇见你的那一天</h3><p>都市职场爱情故事,两个看似平行线的人因缘分相遇,在欢笑与泪水中书写浪漫篇章。</p><div class="tv-meta"><span>都市</span><span>爱情</span><span>更新至24集</span></div></div></div>
+      <div class="tv-item"><div class="tv-thumb">🔥</div><div class="tv-text"><h3>烈火雄心</h3><p>聚焦消防员群体的热血群像剧,展现他们在危难时刻挺身而出的勇气与担当。</p><div class="tv-meta"><span>职场</span><span>热血</span><span>更新至18集</span></div></div></div>
+      <div class="tv-item"><div class="tv-thumb">👑</div><div class="tv-text"><h3>凤舞九天</h3><p>架空王朝权谋大戏,女主从平凡宫女成长为一代皇后的传奇励志故事。</p><div class="tv-meta"><span>古装</span><span>权谋</span><span>更新至40集</span></div></div></div>
+      <div class="tv-item"><div class="tv-thumb">🕵️</div><div class="tv-text"><h3>沉默真相</h3><p>高能悬疑刑侦剧,一桩尘封多年的旧案背后隐藏着令人震惊的真相。</p><div class="tv-meta"><span>刑侦</span><span>悬疑</span><span>全12集</span></div></div></div>
+      <div class="tv-item"><div class="tv-thumb">🌟</div><div class="tv-text"><h3>星辰大海</h3><p>航天题材励志剧,讲述中国航天人追逐星辰大海梦想的奋斗历程。</p><div class="tv-meta"><span>励志</span><span>航天</span><span>更新至28集</span></div></div></div>
+    </div>
+  </div>
+</section>
+
+<!-- 综艺栏目 -->
+<section class="section variety-section" id="variety">
+  <div class="section-inner">
+    <div class="section-header">
+      <h2>🎤 精彩综艺</h2>
+      <p>欢乐不停歇,热门综艺精彩呈现</p>
+    </div>
+    <div class="variety-grid">
+      <div class="variety-card"><span class="variety-icon">🎵</span><h3>歌手2026</h3><p>顶级音乐竞演节目,实力唱将同台飙歌,每一期都是视听盛宴。</p></div>
+      <div class="variety-card"><span class="variety-icon">🍳</span><h3>舌尖上的旅行</h3><p>美食探索类综艺,带您走遍大江南北品味地道风味美食。</p></div>
+      <div class="variety-card"><span class="variety-icon">💪</span><h3>极限挑战营</h3><p>户外竞技真人秀,明星嘉宾挑战极限任务,爆笑不断。</p></div>
+      <div class="variety-card"><span class="variety-icon">🎯</span><h3>最强大脑</h3><p>高智商竞技节目,天才选手脑力对决,挑战人类智慧极限。</p></div>
+      <div class="variety-card"><span class="variety-icon">🏠</span><h3>向往的生活家</h3><p>慢生活体验综艺,远离城市喧嚣,感受田园生活的宁静美好。</p></div>
+      <div class="variety-card"><span class="variety-icon">🎲</span><h3>欢乐喜剧人</h3><p>喜剧竞演节目,各路喜剧大咖同台PK,笑料百出精彩纷呈。</p></div>
+    </div>
+  </div>
+</section>
+
+<!-- 动漫栏目 -->
+<section class="section anime-section" id="anime">
+  <div class="section-inner">
+    <div class="section-header">
+      <h2>🌸 动漫番剧</h2>
+      <p>追番不迷路,热门国漫日漫一网打尽</p>
+    </div>
+    <div class="anime-grid">
+      <div class="anime-card"><div class="anime-cover"><span class="anime-episode">更新至45集</span></div><h3>斗破苍穹</h3></div>
+      <div class="anime-card"><div class="anime-cover"><span class="anime-episode">更新至12集</span></div><h3>灵笼</h3></div>
+      <div class="anime-card"><div class="anime-cover"><span class="anime-episode">全24集</span></div><h3>狐妖小红娘</h3></div>
+      <div class="anime-card"><div class="anime-cover"><span class="anime-episode">更新至60集</span></div><h3>凡人修仙传</h3></div>
+      <div class="anime-card"><div class="anime-cover"><span class="anime-episode">更新至8集</span></div><h3>吞噬星空</h3></div>
+      <div class="anime-card"><div class="anime-cover"><span class="anime-episode">全13集</span></div><h3>罗小黑战记</h3></div>
+      <div class="anime-card"><div class="anime-cover"><span class="anime-episode">更新至30集</span></div><h3>镇魂街</h3></div>
+      <div class="anime-card"><div class="anime-cover"><span class="anime-episode">更新至16集</span></div><h3>雾山五行</h3></div>
+    </div>
+  </div>
+</section>
+
+<!-- 关于我们 -->
+<section class="section about-section" id="about">
+  <div class="section-inner">
+    <div class="section-header">
+      <h2>🎯 关于久久久电影网</h2>
+    </div>
+    <div class="about-content">
+      <p>久久久电影网(jiujiujiudianyingwang-app.github.io)致力于为广大影视爱好者打造一个资源丰富、体验流畅的在线观影平台。我们汇聚了最新院线电影、热播电视剧、精彩综艺节目以及经典动漫番剧,内容涵盖多种类型与题材。</p>
+      <p>平台坚持每日更新精选内容,以优质的视听体验和人性化的交互设计,让每一位用户都能轻松找到心仪的影视作品,享受愉快的观影时光。</p>
+      <div class="stats-row">
+        <div class="stat-item"><div class="stat-num">10,000+</div><div class="stat-label">影视资源</div></div>
+        <div class="stat-item"><div class="stat-num">500+</div><div class="stat-label">热门剧集</div></div>
+        <div class="stat-item"><div class="stat-num">200+</div><div class="stat-label">综艺节目</div></div>
+        <div class="stat-item"><div class="stat-num">300+</div><div class="stat-label">动漫番剧</div></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- 底部 -->
+<footer class="footer">
+  <div class="footer-inner">
+    <div class="footer-logo">久久久电影网</div>
+    <div class="footer-links">
+      <a href="#movies">热门电影</a>
+      <a href="#tv">热播剧集</a>
+      <a href="#variety">精彩综艺</a>
+      <a href="#anime">动漫番剧</a>
+      <a href="#about">关于我们</a>
+      <a href="#">免责声明</a>
+      <a href="#">联系我们</a>
+    </div>
+    <div class="footer-copy">© 2026 久久久电影网 jiujiujiudianyingwang-app.github.io 版权所有 | 本站内容仅供交流分享,如有侵权请联系删除</div>
+  </div>
+</footer>
+
+<script>
+// 移动端菜单
+document.getElementById('menuToggle').addEventListener('click', function() {
+  document.getElementById('navLinks').classList.toggle('active');
+});
+// 点击导航链接关闭菜单
+document.querySelectorAll('.nav-links a').forEach(function(link) {
+  link.addEventListener('click', function() {
+    document.getElementById('navLinks').classList.remove('active');
+  });
+});
+// 返回顶部
+function scrollToTop() {
+  window.scrollTo({ top: 0, behavior: 'smooth' });
+}
+// 导航栏滚动效果
+window.addEventListener('scroll', function() {
+  var nav = document.getElementById('topNav');
+  if (window.scrollY > 50) {
+    nav.style.background = 'rgba(5,5,16,0.96)';
+  } else {
+    nav.style.background = 'rgba(8,8,28,0.92)';
+  }
+});
+</script>
+</body>
+</html>
